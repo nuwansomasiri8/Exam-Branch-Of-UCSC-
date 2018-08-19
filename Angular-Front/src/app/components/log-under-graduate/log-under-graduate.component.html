@@ -1,0 +1,29 @@
+<app-under-graduate-nav></app-under-graduate-nav>
+<br>
+<br>
+<app-repeate-from-published *ngIf="authService.isAdmin()"></app-repeate-from-published>
+<div *ngIf="authService.isCs() || authService.isIs()">
+  <h3>
+    <u>Requirnments to be fullfilled by an repeat Undergraduate student</u>
+  </h3>
+  <br><br>
+  <ul>
+    <p>
+      <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Students will be able to sit for the repeat exams 
+      if and only if he or she has got less than C minus pass at any
+      subject in the examination.
+    </p>
+    <p>
+      <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Students whose medical certificates are accepted by 
+        the board are not required to pay the repeat examination fee for the absent subject/s, but have to apply for 
+        the examination of the absent subject/s by duly filling the repeat examination form.
+      </b>
+    </p>
+    <p>
+      <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Candidates repeating the examination shall pay the exam 
+      fee at any Branch of the People's Bank to the credit of the UCSC Account No. 086-1-001-2-1190316 and attach 
+      the receipt to this application.
+    </p>
+  </ul>
+  <p>Repeat Examination Fees:  Rs.25/= per paper and  Rs.125/= for 05 papers or more.</p>
+</div>

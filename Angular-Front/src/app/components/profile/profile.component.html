@@ -1,0 +1,45 @@
+<div *ngIf="user">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h2 class="page-header"> Profile</h2>
+			<br>
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label>Index No:</label>
+					<label class="form-control">{{user.index_no}}</label>
+				</div>
+				<div class="col-md-6 form-group">
+					<label>Registration No:</label>
+					<label class="form-control">{{user.registration_no}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Name with initials:</label>
+				<label class="form-control">{{user.user_name}}</label>
+			</div>
+			<div class="form-group">
+				<label>Name in Full:</label>
+				<label class="form-control">{{user.full_name}}</label>
+			</div>
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label>Mobile No:</label>
+					<label class="form-control">{{user.mobile_no}}</label>
+				</div>
+				<div class="col-md-6 form-group">
+					<label>Fixed No:</label>
+					<label class="form-control">{{user.fixed_no}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Email:</label>
+				<label class="form-control">{{user.email}}</label>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+</div>

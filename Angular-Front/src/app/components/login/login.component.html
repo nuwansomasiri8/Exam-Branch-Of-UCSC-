@@ -1,0 +1,65 @@
+<!--<div class = "container">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<br><br><br><br>
+			<h2 class = "page-header">Login</h2>
+			<br>
+			<form (submit) = "loginUser()">
+				<div class = "form-group">
+
+					<input type="text" [(ngModel)] = "registration_no" name ="registration_no"
+					class = "form-control" placeholder="registration">
+				</div>
+				<div class = "form-group">
+
+					<input type="password" [(ngModel)] = "password" name ="password" class = "form-control" placeholder="password">
+				</div>
+				<input type="submit" class ="btn btn-success"  value = "Login">
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</div>-->
+<br>
+<br>
+<br>
+<div class="container">
+  <div class = "container" style="">
+    <div class="container">
+      <div class="col-md-4"></div>
+      <div class="logo">
+        <img src="assets/images/ucsc_logo1.png" alt="zjhjvz" width="300" height="300">
+      </div>
+      <div class="col-md-4"><h2 class = "page-header"><b>Login Please</b></h2></div>
+      <div class="col-md-4"></div>
+    </div>
+
+    <form (submit) = "loginUser()">
+      <div class="container">
+        <div class="col-md-4"></div>
+        <div class = "form-group col-md-4">
+          <label>Registration Number</label>
+          <input type="text" [(ngModel)] = "registration_no" name ="registration_no" class = "form-control">
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+      <div class="container">
+        <div class="col-md-4"></div>
+        <div class = "form-group col-md-4">
+          <label>Password</label>
+          <input type="password" [(ngModel)] = "password" name ="password" class = "form-control">
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+      <div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><input type="submit" class ="btn btn-primary btn-block" value = "Login"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </form>
+  </div>
+
+</div>

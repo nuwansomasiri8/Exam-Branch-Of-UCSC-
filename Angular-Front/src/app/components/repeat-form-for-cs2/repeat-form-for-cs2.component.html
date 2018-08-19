@@ -1,0 +1,174 @@
+<!-- <div class="row"> -->
+    <h3 class="text" style="text-align: center;">UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING</h3>
+    <h4 style="text-align: center;">
+      <u>REPEAT EXAMINATION FORM - CS - SEMESTER II - 2018</u>
+    </h4>
+  <!-- </div> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <form (submit)="cs2Data()">
+        <label><h4><u>Subjects</u></h4></label>
+        <h4 style="float: right;"><u>Grades Obtained</u></h4><br>
+        <h6 style="float: right;line-height: 0.02;">(Previous Attempts)</h6>
+        <!-- <input type="hidden" [(ngModel)]="uIndex_no" name="uIndex_no" value="{{user.index_no}}"/> -->
+        <br><br>
+        <fieldset>
+          <fieldset>
+            <h4>1<sup>st</sup> Year</h4>
+            <h6 style="float: right;margin-right: 1em;">1<sup>st</sup></h6>
+            <h6 style="float: right;margin-right: 2em;">2<sup>nd</sup></h6>
+            <h6 style="float: right;margin-right: 2em;">3<sup>rd</sup></h6>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="ENH_1102" name="ENH_1102" value="Enhancement II (ENH 1102)" (click)="clicked('Enhancement II (ENH 1102)')"> Enhancement II (ENH 1102)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_1107" name="SCS_1107" value="Software Engineering I (SCS 1107)"> Software Engineering I (SCS 1107)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="ENH_1101" name="SCS_1108" value="Data Structures and Algorithms II (SCS 1108)"> Data Structures and Algorithms II (SCS 1108)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+  
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_1109" name="SCS_1109" value="Programming II (SCS 1109)"> Programming II (SCS 1109)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_1110" name="SCS_1110" value="Discrete Mathematics (SCS 1110)"> Discrete Mathematics (SCS 1110) 
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_1111" name="SCS_1111" value="Mathematical Methods II (SCS 1111)"> Mathematical Methods II (SCS 1111)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_1112" name="SCS_1112" value="Foundations of Computer Science (SCS 1112)"> Foundations of Computer Science (SCS 1112)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_1113" name="SCS_1113" value="Statistics (SCS 1113)"> Statistics (SCS 1113)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+          </fieldset>
+          <br>
+          <fieldset>
+            <h4>2<sup>nd</sup> Year</h4>
+            <h6 style="float: right;margin-right: 1em;">1<sup>st</sup></h6>
+            <h6 style="float: right;margin-right: 2em;">2<sup>nd</sup></h6>
+            <h6 style="float: right;margin-right: 2em;">3<sup>rd</sup></h6>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_2106" name="SCS_2106" value="Operating Systems I (SCS 2106)"> Operating Systems I (SCS 2106)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_21107" name="SCS_2107" value="Mathematical Methods III (SCS 2107)"> Mathematical Methods III (SCS 2107)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_2108" name="SCS_2108" value="Programming IV (SCS 2108)"> Programming IV (SCS 2108)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_2109" name="SCS_2109" value="Database II (SCS 2109)"> Database II (SCS 2109)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_2110" name="SCS_2110" value="Programming Language Concepts (SCS 2110)"> Programming Language Concepts (SCS 2110)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_2111" name="SCS_2111" value="Laboratory II (SCS 2111)"> Laboratory II (SCS 2111)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="">
+                <input class="form-check-input" type="radio" [(ngModel)]="SCS_2112" name="SCS_2112" value="Automata Theory (SCS 2112)"> Automata Theory (SCS 2112)
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;">
+                <input type="text" class="form-control mr-sm-2" style="width: 7%;float: right; line-height: 0.02;" required>
+              </label>
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Payment Receipt No</label>
+              <input type="text" [(ngModel)]="receipt_no" name="receipt_no" class="form-control" style="width: 50%" id="exampleInputPassword1" placeholder="Receipt No" required>
+            </div>
+          </fieldset>
+          <br>
+          <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <br>
+  <br>
+  <br>

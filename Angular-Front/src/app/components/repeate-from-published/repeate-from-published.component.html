@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-6">
+    <form (submit)="savePublishedData()">
+      <fieldset>
+        <fieldset class="form-group">
+          <legend>Computer Science / Information Systems</legend>
+          <br>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" [(ngModel)]="sem" name="sem" value="Semester I" id="optionsRadios1"> SEMESTER I
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" [(ngModel)]="sem" name="sem" value="Semester II" id="optionsRadios2"> SEMESTER II
+            </label>
+          </div><br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Final Date :</label>
+            <input type="date" class="form-control" style="width:50%" id="exampleInput" [(ngModel)]="date" name="date" placeholder="yyyy-MM-dd" min="{{today}}"  required />
+          </div>
+          <!-- <div>
+              <input type="date" id="exampleInput" [(ngModel)]="date" name="date" placeholder="yyyy-MM-dd" min="{{today}}"  required />
+          </div> -->
+        </fieldset>
+        <br>
+        <button type="submit" class="btn btn-primary">Publish</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <fieldset class="form-group">
+      <legend>Currently Published Semester</legend>
+      <br>
+      <label> 
+        <h2>{{publiData.semester}}</h2>
+      </label>
+    </fieldset>
+  </div>
+</div>
